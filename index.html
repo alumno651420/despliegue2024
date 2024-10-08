@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>05-tablamult</title>
+    <script>
+        window.onload = function tablamult() {
+            let n = prompt("Introduzca un número:");
+            if (n >= 0) {
+                document.write("La tabla de multiplicar de " + n + " es: <br>")
+                document.write("<ul type='disc'>");
+                for (let i = 1; i <= 10; i++) {
+                    document.write("<li>" + n + " x " + i + " = " + (n * i) + "</li>");
+                }
+                document.write("</ul>");
+            } else {
+                console.warn("El número " + n + " es menor de 0 por lo cual no es valido");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="resultado"></div>
+</body>
+
+</html>
